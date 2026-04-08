@@ -1,22 +1,18 @@
 #include <iostream>
-#include <string>
-#include <cstring>
-#include <algorithm>
 #include <vector>
 
 using namespace std;
+int main() {
+	
+	vector<int>vtr;
+	int a = 0;
+	int b = 0;
 
-int main()
-{
-	//ios_base::sync_with_stdio(false);
-	//cin.tie(0);
+	while (cin >> a >> b){
+		vtr.push_back(a + b);
+	}
 
-	int A,B,Result;
+	cout << vtr.front();
 
-	cin >> A;
-	cin >> B;
-	Result = A + B;
-
-	cout << Result;
 
 }
