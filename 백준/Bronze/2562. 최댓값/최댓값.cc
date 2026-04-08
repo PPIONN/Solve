@@ -4,6 +4,8 @@
 using namespace std;
 
 int main() {
+    ios::sync_with_stdio(false);
+	cin.tie(NULL);
 	vector<int>vtr;
 	int a = 0;
 	int maxit = 0;
@@ -13,13 +15,11 @@ int main() {
 		vtr.push_back(a);
 	}
 	for (int i : vtr) {
+        forcheck++;
 		if (i > maxit) {
 			maxit = i;
-			forcheck++;
 			check = forcheck;
-			continue;
 		}
-		forcheck++;
 	}
 
 	cout << maxit << "\n" << check;
