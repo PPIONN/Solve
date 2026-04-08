@@ -12,7 +12,10 @@ int main() {
 		vtr.push_back(a + b);
 	}
 
-	cout << vtr.front();
+	for(int i : vtr){
+        cout << i << endl;
+    }
 
 
+    
 }
