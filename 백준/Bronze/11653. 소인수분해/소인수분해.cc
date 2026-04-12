@@ -14,19 +14,17 @@ int main() {
 	if (num == 1) {
 		return 0;
 	}
-	for (int i = num; i > 1; ) {
-		for (int j = 2; j <= i; j++) {
-			if (i % j == 0) {
-				if (jump == false) {
-					cout << "\n";
-				}
-				if(jump != false)jump = false;
-				cout << j;
-				i /= j;
-				break;
-			}
+
+	for (int i = 2; i * i <= num;) {
+		if (num % i == 0) {
+			cout << i << "\n";
+			num /= i;
+		}
+		else {
+			i++;
 		}
 	}
+	if(num > 1)cout << num << "\n";
 
 	return 0;
 }
