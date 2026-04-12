@@ -16,7 +16,7 @@ int main() {
 				vtr.push_back(i);
 			}
 		}
-		for (int i : vtr) {
+		for (const auto& i : vtr) {
 			result += i;
 		}
 		if (result == num) {
